@@ -1,0 +1,32 @@
+1. approach
+test: 100 dark 100 light
+train: 400 dark 400 light
+ratio 4:1
+score: 0.978
+
+2. approach
+test: 100 dark 100 light
+train: 100 dark 100 light
+ratio 1:1
+score: 0.987
+
+3. approach
+test: 100 dark 100 light 50 blur
+train: 400 dark 400 light 200 blur
+ratio 4:1
+score: 0.987
+
+4. approach
+everything separately
+test: 100 dark 100 light 50 blur 50 rotate
+train: 400 dark 400 light 200 blur 200 rotate
+ratio 4:1
+score: 0.985
+
+5. approach
+firstly lighten and darken and blur
+then: rotate
+test: 100 dark 100 light 50 blur 50 rotate
+train: 400 dark 400 light 200 blur 200 rotate
+ratio 4:1
+score: 0.987
